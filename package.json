@@ -1,0 +1,35 @@
+{
+  "name": "findserver",
+  "version": "1.0.0",
+  "description": "To find the list of all servers.",
+  "main": "./src/server.js",
+  "scripts": {
+    "lint": "npx eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src test --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "test": "mocha test/**/**/**.test.js",
+    "start": "nodemon"
+  },
+  "keywords": [
+    "servers",
+    "list"
+  ],
+  "author": "Akarsh Barar",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.15",
+    "prettier": "2.5.1",
+    "should": "^13.2.3",
+    "supertest": "^6.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^12.0.3",
+    "express": "^4.17.2"
+  }
+}
